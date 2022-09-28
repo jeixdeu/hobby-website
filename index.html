@@ -4,9 +4,83 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World!</title>
+    <title>Jade's Bountiful Bakes</title>
+    <link rel="stylesheet" href="styles.css"> 
+
+    
+
 </head>
 <body>
-    
+    <div class="pageContainer">
+        <div id="contentWrap">
+            <header>
+                <nav>
+                    <div class="headerNavLeft">
+                    </div>
+                    
+                    <ul class="headerNavRight">
+                        <form id="form" role="search">
+                            <input type="search" id="query" name="q" 
+                            placeholder="Tasty bakes await..."
+                            aria-label="Search through site content">
+                        </form>
+                            <a href="index.html">Home</a>
+                        <a href="signup.html">Sign Up</a>
+                    </ul>
+                </nav>
+            </header>
+        
+            <section class="section1">
+                
+                <div class="readMoreAndMoreStories">
+                    <div class="titleContainer">
+                        <h1 class="pageTitle">Jade's Bountiful Bakes</h1>
+                        <p>Follow along and catch the baking bug!</p>
+                       
+                        <div class="readMore">
+                            <div class="topImage">
+                                <img class="recipeImageTop" src="images/espresso.jpg" alt="featuredRecipe">
+
+                               </div>
+                            <div class="mainCard">
+                                <h1>Bake of the Week</h1>
+                                <h2>Espresso Martini Cake</h2>
+                                <p>Chocolate sponges are drizzled with boozy coffee syrup then layered up with an indulgent espresso mascarpone icing. This showstopper is luscious and rich – it makes a fabulous celebration cake!</p>
+                                <a href="espresso.html">Read more...</a>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                    
+
+                    <div class="imageContainer">
+                       
+                       <div class="recipes">
+                        <img class="recipeImage" src="images/butterscotch.jpg" alt="butterscotchBlondies">
+                        <a href="/butterscotch.html">Butterscotch Blondies</a>
+                       </div>
+            
+                       <div class="recipes">
+                       
+                        <img class="recipeImage" src="images/espresso.jpg" alt="espressoMartiniCake">
+                       
+                        <a href="espresso.html">Espresso Martini Cake</a>
+                       </div>
+            
+                       <div class="recipes">
+                        <img class="recipeImage" src="images/succulent.jpg" alt="succulentCupcakes">
+                        <a href="succulents.html">Succulent Cupcakes</a>
+                       </div>
+                    </div>
+                </div>
+
+                
+            </section>
+        
+            <footer id="footer">
+            </footer>
+        </div>
+    </div>
 </body>
 </html>

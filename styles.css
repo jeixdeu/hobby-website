@@ -1,0 +1,256 @@
+*{
+    background-color: #f4e8d3;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+  }
+  
+  #page-container {
+    position: relative;
+    min-height: 100vh;
+  }
+  
+  #content-wrap {
+    padding-bottom: 2.5rem;
+  }
+  
+/* this is the home page */
+  header {
+    margin-bottom: -20px;
+  }
+  
+  nav {
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    margin-right: 10px;
+  }
+  
+  input {
+    border: 2px solid rgb(236, 169, 213);
+    border-radius: 4px;
+    outline: none;
+  }
+  
+  ul > a,
+  ul > img {
+    padding: 0 5px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* featured recipe section */
+  
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5vh;
+  }
+  
+  .titleContainer {
+    font-size: 30px;
+    margin-bottom: 50px;
+    text-align: center;
+    margin: -10px 80px 40px 80px;
+    text-align: left;
+  }
+  
+  .titleContainer > p {
+    margin: 0px 0px 50px 0px;
+    color: rgb(114, 209, 231);
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  }
+  
+  .pageTitle {
+    font-size: 45px;
+    margin-bottom: 10px;
+    color: rgb(236, 169, 213);
+    font-weight: bold;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  }
+  
+  .readMore {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 30px 0px 0px 0px;
+  }
+  
+  .mainCard > a {
+    font-size: 17px;
+  }
+  
+  p {
+    font-size: 17px;
+    margin: 0px 100px 0px 0px;
+    text-align: left;
+  }
+  
+  .recipeImageTop {
+    border-radius: 10px;
+    height: 400px;
+    filter: drop-shadow(30px 10px 4px #e697d2);
+  }
+  
+  /* recipes at bottom of page */
+  .imageContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .recipes {
+    display: flex;
+    flex-direction: column;
+    padding: 70px;
+    text-align: center;
+    margin-top: -15px;
+  }
+  
+  .recipes > a {
+    margin-top: 20px;
+    font-size: 20px;
+    background-color: #191919;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .recipeImage {
+    height: 30vh;
+    width: 275px;
+    object-fit: cover;
+    border-radius: 5px;
+    will-change: transform;
+    transition: transform 450ms;
+    filter: drop-shadow(30px 10px 4px #e697d2);
+  }
+  
+  .recipeImage:hover {
+    transition: transform 125ms;
+    transform: translateY(-10px);
+  }
+  
+  .logo {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+  }
+  
+  /* individual recipe pages */
+  
+  .titleAndPhoto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .recipePageImage {
+    height: 45vh;
+    width: 75vh;
+    border-radius: 10px;
+    filter: drop-shadow(30px 10px 4px #e697d2);
+  }
+  
+  .recipePageTitle {
+    color: rgb(236, 169, 213);
+    font-weight: bold;
+    font-size: 40px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  }
+  
+  .recipePageTitleAndSubtitle {
+    text-align: center;
+    margin: 80px 0px 40px 0px;
+  }
+  
+  .subtitle {
+      margin-top: 10px;
+      font-size: 20px;
+  
+  }
+  
+  .textContainer {
+      display: flex;
+      flex-direction: row;
+      margin: 50px 10px 90px 10px;
+      display: flex;
+      justify-content: space-evenly;
+  
+  }
+  
+  .recipeList{
+      border: 3px solid black;
+      border-radius: 5px;
+      padding: 0em 1em;
+      margin:0 10px 0 100px;
+      font-size: 20px;
+  }
+  
+  .recipeList > h1 {
+    text-decoration: underline;
+  }
+  
+  .recipeItems {
+    width: 250px;
+  
+  }
+  
+  .directions {
+    font-size: 22px;
+    width: 570px;
+    
+  }
+  
+  .directions > h1{
+    
+    text-decoration: underline;
+  
+  }
+  
+  /* newsletter sign-up form */
+form {
+    border: 4px solid #f1f1f1;
+    background-color: #f1f1f1;
+  }
+  
+  .container {
+    padding: 20px;
+    background-color: #f1f1f1;
+  }
+  
+  input[type=text], input[type=submit] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #e697d2;
+    box-sizing: border-box;
+  }
+  
+  input[type=checkbox] {
+    margin-top: 16px;
+  }
+  
+  input[type=submit] {
+    background-color: #e697d2;
+    color: white;
+    border: none;
+  }
+  
+  input[type=submit]:hover {
+    opacity: 0.8;
+  }
+  
+  footer {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  
